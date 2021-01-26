@@ -1,16 +1,27 @@
 
 
-var answer =prompt('数字を入力してください');
-if(answer >= 0){
- alert('正の数');
-} else if(answer < 0){
-  alert('負の数');
-} else{
+var answer =prompt('半角数字を入力してください');
+if(answer.length !== 0){
+  if( answer >= 0){
+   alert('正の数');
+  } else if( answer < 0){
+   alert('負の数');
+  }   else{
+   alert('数値を入力してください');
+  }
+}else{
   alert('数値を入力してください');
 }
 
 var animals = ['パンダ','ライオン','キリン']
 
+var i =0;
+while(i<animals.length){
+alert(animals[i]);
+i++;
+}
+
+var animals = ['パンダ','ライオン','キリン']
 var answer2 =prompt('パンダとライオンとキリンどれが好きですか？');
 var i =0;
 while(i<animals.length){
@@ -38,7 +49,7 @@ switch(answer3){
  break;
 }
 
-var answer4 =prompt('数字を入力してください');
+var answer4 =prompt('半角数字を入力してください');
 
 function calc(x){
   return x * x *3.14;
