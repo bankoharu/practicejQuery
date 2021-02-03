@@ -24,9 +24,9 @@ i++;
 var animals = ['パンダ','ライオン','キリン']
 var answer2 =prompt('パンダとライオンとキリンどれが好きですか？');
 var i =0;
-while(i<animals.length){
+while(i< animals.length){
   if(answer2 =="ライオン"){
-   alert("ライオン[1]");
+   alert('ライオン[1]');
     break;
   }
 alert(animals[i]);
